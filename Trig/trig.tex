@@ -1,9 +1,11 @@
-%Source code for Trigonometry With Tears
 
 \documentclass[11pt]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[sexy]{evan}
 \usepackage{framed}
+\usepackage{amsmath}
+\DeclareMathOperator\cis{cis}
+\DeclareMathOperator\Arg{Arg}
 
 \title{Trigonometry With Tears}
 \author{aSquaredRush}
@@ -140,7 +142,7 @@ Let's start off by going away from trigonometry for a second, and use complex nu
 
 \begin{example}
 \vspace{5mm}
-\noindent Consider $\cos(a+b)$ and \cos(a-b)$. Expanding gives $\cos{(a)}\cos{(b)}-\sin{(a)}\sin{(b)}$ and $\cos{(a)}\cos{(b)}+\sin{(a)}\sin{(b)}$. Well, you can cancel out terms by adding to get $$\cos{(a)}\cos{(b)} = \frac{1}{2}(\cos{(a+b)}+\cos{(a-b)})$$ Try proving the rest using the same method.
+\noindent Consider $\cos(a+b)$ and $\cos(a-b)$. Expanding gives $\cos{(a)}\cos{(b)}-\sin{(a)}\sin{(b)}$ and $\cos{(a)}\cos{(b)}+\sin{(a)}\sin{(b)}$. Well, you can cancel out terms by adding to get $$\cos{(a)}\cos{(b)} = \frac{1}{2}(\cos{(a+b)}+\cos{(a-b)})$$ Try proving the rest using the same method.
 \end{example}
 
 \begin{theorem}
@@ -163,6 +165,57 @@ $$\cos{(a)}-\cos{(b)} = -2\sin{(\frac{a+b}{2})}\sin{(\frac{a+b}{2})}$$
 $$\sin{(a)}+\sin{(b)} = 2\sin{(\frac{a+b}{2})}\cos{(\frac{a+b}{2})}$$
 $$\sin{(a)}-\sin{(b)} = 2\cos{(\frac{a+b}{2})}\sin{(\frac{a+b}{2})}$$
 \end{theorem}
+
+\pagebreak
+
+\vspace{5mm}
+\section{Techniques}
+It would be practically impossible to include all possible techniques in this section, but I'll do my best to cover the most important ones.
+
+\subsection{Solutions over $[0,2\pi)$}
+\begin{example}
+\begin{problem}
+Find the sum of angles $\theta \in [0,2\pi)$ that satisfy $\cos{(7\theta)}=\frac{4}{7}$
+\end{problem}
+
+\vspace{5mm}
+Please don't expand $\cos{(7\theta)}$. Please.  Instead, use the pattern of solutions in $\cos{(n\theta)} = 0$. For $n=1$, the sum is $2\pi$. For $n=2$, the sum is $4\pi$. For $n=3$, the sum is $6\pi$, so the sum is $(2n)\pi$ So, the answer is \boxed{14}. Note, that the reason why we could make $\cos$ equal to 0 is because y=4/7 and y=0 intersect $\cos$ the same number of times over $[0,2\pi)$. This doesn't apply to y=1 because the line hits $cos$ once for every 2 times the other lines hit $\cos$.
+
+\vspace{5mm}
+\noindent Sidenote: You can extend this to $\sin$, and also to $[0,2\pi]$ easily using the same pattern technique. You can also do this for the number of solutions. Just notice a pattern for $\cos{(n\theta)} = 1$ For $n=1$, there is one solution. For $n=2$ there are 2 solutions. You can continue for higher values of n, and you will see this pattern continues. Since $\cos$ will equal 1 the same number of times it will equal $\frac{4}{7}$, this pattern can be extended. So, the answer is that $\cos{(7\theta)}=4/7$ \boxed{7} times.
+\end{example}
+
+
+
+\subsection{Roots of Unity}
+
+This is by far one of the most powerful techniques used to solve trigonometry problems such as trigonometric sums. I'll explain through an example.
+\begin{example}
+\begin{problem}
+[2019 FAMAT Alpha Individual]
+
+Find the sum of all angles $\theta \in [0,2\pi)$ such that
+$$\cos{(\theta)}+\cos{(2\theta)}+\cos{(3\theta)}+\cdots+\cos{(2019\theta)} = \frac{-1}{2}$$
+
+For the solution, remember $\cis{(\theta)}=e^{i\theta}=\cos{(\theta)}+i\sin{(\theta)}$. So, we can rewrite $\cos$ in terms of $\cis$ because $\frac{\cis{(\theta)}+\cis{(-\theta)}}{2}=\cos{(\theta)}$
+The summation then becomes $$\sum_{n=1}^{2019}{\frac{\cis{(n\theta)}+\cis{(-n\theta)}}{2} = \frac{-1}{2}}$$
+Multiply both sides by 2 and simplify $\cis{(-n\theta)}$ to $\frac{1}{\cis{(n\theta)}}$ to get $$\sum_{n=1}^{2019}{\cis{(n\theta)}+\frac{1}{\cis{(n\theta)}}} = -1$$
+By now, you might be able to see where this solution is going. Since $\cis{(n\theta)} = e^{ni\theta}$, adding a bunch of powers of $e$ is a finite geometric series. The formula for the sum of a finite geometric series is $$\frac{a(1-r^n)}{1-r}$$ where $r$ is the common ratio and $a$ is the first term, but you should be able to prove this.
+
+\vspace{5mm}
+In our case, $a,r$ = $\cis{(\pm\theta)}$, so our summation becomes $$\frac{(\cis{(\theta)})(1-\cis{(2019\theta)})}{1-\cis{(\theta)}}+\frac{1-\frac{1}{\cis{(2019\theta)}}}{\cis{(\theta)}(1-\frac{1}{\cis{(\theta)}})}=-1$$
+
+This simplifies to $$\frac{(\cis{(\theta)})(1-\cis{(2019\theta)})}{1-\cis{(\theta)}}+\frac{\cis{(2019\theta)}-1}{\cis{(\theta)-1}}=-1$$
+
+Factoring out $1-\cis{2019\theta}$ gets $$1-\cis{2019\theta}=1$$ or $$\cis{(2019\theta)}=\cos{(2019\theta)}+i\sin{(2019\theta)}=0$$
+
+Now, we were asked for the sum of the solutions from $[0,2\pi)$. You can then pair real terms and imaginary terms, so the question is either $\cos(2019\theta)=0$ or $\sin(2019\theta)=0$. If you derive the pattern mentioned in 3.1 for $\sin$, you'll notice it's not as easy to implement as the one for $\cos$, so let's use the pattern $2n\pi$ which gives us a final answer of $\boxed{4038\pi}$
+\end{problem}
+\end{example}
+
+
+
+
 
 
 
