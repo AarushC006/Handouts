@@ -1,0 +1,171 @@
+%Source code for Trigonometry With Tears
+
+
+
+\documentclass[11pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[sexy]{evan}
+\usepackage{framed}
+
+\title{Trigonometry With Tears}
+\author{aSquaredRush}
+\date{}
+
+\begin{document}
+
+
+
+
+\maketitle
+
+\section{Basics}
+We start by defining $\sin(\theta)$ and $\cos(\theta)$. On a unit circle, $x=\cos(\theta)$ and $y=\sin(\theta)$. From here, we can derive the periods of both functions as well. The $x,y$ values repeat every rotation around the circle($2\pi$ radians). 
+\vspace{5mm}
+
+We can then also define $\tan(\theta)$ as the ratio between $\sin(\theta)$ and $\cos(\theta)$. We can see that due to the signs of $x,y$, the period of tangent is $\pi$ radians. 
+
+\vspace{5mm}
+
+Sidenote: The period of a function trig($\theta$) is an angle $\alpha$ such that
+trig($\theta+\alpha$) = trig($\theta$). This means that even though 2$\pi$ is a period of $\sin$, 4$\pi$ also is. This applies for any integer multiple of 2$\pi$. From here on out, the period of a function refers to the primitive period, i.e. the lowest positive period of a function.    
+
+
+\subsection{Functions}
+\begin{definition}
+[The basic trigonometric functions]
+
+$$\sin(\theta)$$
+
+
+$$\cos(\theta)$$
+
+
+$$\tan(\theta)$$
+
+
+$$\csc(\theta) = \frac{1}{\sin(\theta)}$$
+
+
+$$\sec{}(\theta) = \frac{1}{\sin(\theta)}$$
+
+
+$$\csc(\theta) = \frac{1}{\cos(\theta)}$$
+
+
+$$\cot(\theta) = \frac{1}{\tan(\theta)} = \frac{\cos(\theta)}{\sin(\theta)}$$
+\end{definition}
+
+\pagebreak
+\section{Identities and Formulas}
+
+These are the essential formulas. Almost all others can be derived from these:
+
+
+
+\begin{theorem}
+\noindent $\sin(\theta)^2+\cos(\theta)^2=1$ due to the Pythagorean Theorem using legs of a right triangle in a unit circle.
+
+\vspace{5mm}
+\noindent $1+\tan(\theta)^2=\sec(\theta)^$. This can be proved by writing $\tan(\theta)$ and $\sec(\theta)$ in terms of $\sin(\theta)$ and $\cos(\theta)$. 
+
+\vspace{5mm}
+\noindent $1+\cot(\theta)^2=\csc(\theta)^2.$ This can be proved by writing $\cot(\theta)$ and $\csc(\theta)$ in terms of $\sin(\theta)$ and $\cos(\theta)$.
+\end{theorem}
+
+\subsection{Angle Sum/Difference Formulas}
+
+Let's start off by going away from trigonometry for a second, and use complex numbers. Any complex number can be represented by $r$cis$(\theta)=r(\cos(\theta)+i\sin(\theta))$ We can notice that this looks very similar to a Cartesian coordinate in the form of (x,y), but instead, this is in the form of $(\cos(\theta),\sin(\theta))$ The $r$ isn't needed because $\sin(\theta)$ and $\cos(\theta)$ have a maximum value of 1. 
+
+\vspace{5mm}
+\noindent There is a geometric proof for the angle sum identities, but the complex proof is much simpler(pun intended). Using the properties of complex numbers, we know cis$(\theta+\alpha) = $cis$(\theta)$cis$(\alpha)$. 
+
+\vspace{5mm}
+\noindent Rewriting the cis's in terms of $\sin$ and $\cos$ gives cis$(\theta+\alpha) = (\cos(\theta)+i\sin(\theta))(\cos(\alpha)+i\sin(\alpha))$. Expanding gives us $\cos(\theta)\cos(\alpha)-\sin(\theta)\sin(\alpha)+i(\sin(\theta)\cos(\alpha)+\cos(\theta)\sin(\alpha))$  
+
+\vspace{5mm}
+\noindent Because cis$(\theta+\alpha) = \cos(\theta+\alpha)+i\sin(\theta+\alpha)$, we can equate the real and imaginary terms of the expansion with this to get $$\cos(\theta+\alpha) = \cos(\theta)\cos(\alpha)-\sin(\theta)\sin(\alpha)$$ and $$\sin(\theta+\alpha) = \sin(\theta)\cos(\alpha)+\cos(\theta)\sin(\alpha)$$ Finding the difference is just plugging in $-\alpha$ and using the even and odd properties of $\cos$ and $\sin$, respectively.
+
+\vspace{5mm}
+\noindent This might seem like a lot of work, but it's really easy to remember and derive by hand compared to seeing it in this pdf.
+
+\vspace{5mm}
+\pagebreak
+\noindent You might recall that tangent is the ratio of sine to cosine. So,
+\begin{align*}
+\tan(\alpha + \theta) &= \frac{\sin( \theta \pm \alpha)}{\cos(\theta \pm \alpha)} \\
+&= \frac{\sin(\theta) \cos(\alpha) \pm \cos(\theta) \sin(\alpha)}{\cos(\theta) \cos(\alpha) \mp \sin(\theta) \sin(\alpha)} \\
+&= \frac{\frac{1}{\cos(\theta)\cos(\alpha)}}{\frac{1}{\cos(\theta)\cos(\alpha)}} * \frac{\sin(\theta) \cos(\alpha) \pm \cos(\theta) \sin(\alpha)}{\cos(\theta) \cos(\alpha) \mp \sin(\theta) \sin(\alpha)} \\
+&= \frac{\tan(\alpha)\pm\tan(\theta)}{1\mp\tan(\alpha)\tan(\theta)}
+\end{align*}
+
+
+
+
+
+\vspace{5mm}
+\begin{theorem}
+[Sum/Difference Formulas]
+
+
+\vspace{5mm}
+\noindent $$\cos(\theta\pm\alpha) = \cos(\theta)\cos(\alpha)\mp\sin(\theta)\sin(\alpha)$$
+
+\vspace{5mm}
+\noindent $$\sin(\theta\pm\alpha) = \sin(\theta)\cos(\alpha)\pm\cos(\theta)\sin(\alpha)$$
+
+\vspace{5mm}
+\noindent $$\tan(\alpha\pm\theta) = \frac{\tan(\alpha)\pm\tan(\theta)}{1\mp\tan(\alpha)\tan(\theta)}$$
+
+
+\end{theorem}
+
+
+\pagebreak
+\subsection{Double Angle, Triple Angle.....}
+\noindent To continue the theme of complex numbers in trigonometry, let me show you a \textit{much} quicker way of deriving multiples of angles. 
+
+\vspace{5mm}
+\noindent We know cis$(A)$ represents a complex number. cis$(A)^n = $cis$(nA)$. In other words $(\cos(A)+i\sin(A))^n=\cos(nA)+i\sin(nA)$. Well,  $(\cos(A)+i\sin(A))$ can be represented as $x+iy$. Raising this to the $n'th$ power is the same thing as $(x+y)^n$ but with a slight twist. 
+
+\vspace{5mm}
+\noindent First, we know $(x+y)^n$ can be represented through Pascal's Triangle. The coefficients of $(x+y)^n$ are the coefficients of the $n'th$ row of Pascal's Triangle. Keep in mind that the first row is the 0th row. 
+
+\vspace{5mm}
+\noindent Now, we're faced with a problem. We need $(x+iy)^n$, but Pascal's Triangle only covers $(x+y)^n$. This can be solved. By the Binomial Theorem, for the first element of the nth row of Pascal's Triangle, the exponent of $iy$ is 0. For the second element, it's 1, for the third, it's 2, and for the fourth it's 3... This means the coefficient of the first element in the nth row is real while the second element is not, the third element is, and the fourth element is not... We also know that the nth row of Pascal's Triangle is equal to $\cos(nA)+i\sin(nA)$. This means we can equate the real and imaginary parts of the nth row of Pascal's Triangle with $\cos(nA)+i\sin(nA)$. From this we get $\cos(nA) = $ the odd indexed elements of the nth row of Pascal's Triangle while $\sin(nA) = $ the even indexed elements of the nth row of Pascal's Triangle.
+
+\vspace{5mm}
+\noindent If you managed to make it through that wall of text, but you are still a bit confused, here is an example problem: find $\cos(4x)$ in terms of $\cos(x)$. Well, we know that the 4th row of Pascal's Triangle is 1 4 6 4 1 which means we want 1,6, and 1 as they are the odd indexed elements. By the Binomial Theorem, this is $\cos(x)^4, {4\choose2} \cos(x)^2\sin(x)^2,$ and $\sin(x)^4$. By our Pythagorean Identities, we know $\sin(x)^2 = 1-\cos(x)^2$, and we also know $\sin(x)^4=(\sin(x)^2)^2=(1-\cos(x)^2)^2$, so the final answer should become clear after some substitution.
+
+\pagebreak
+\subsection{Product to Sum}
+\noindent Sometimes, a problem can be solved by converting a product of trigonometric functions to a sum. If you're taking a test that is based on trigonometry then you should memorize these for speed; otherwise, I have some good intuition for them. 
+
+\begin{example}
+\vspace{5mm}
+\noindent Consider $\cos(a+b)$ and \cos(a-b)$. Expanding gives $\cos{(a)}\cos{(b)}-\sin{(a)}\sin{(b)}$ and $\cos{(a)}\cos{(b)}+\sin{(a)}\sin{(b)}$. Well, you can cancel out terms by adding to get $$\cos{(a)}\cos{(b)} = \frac{1}{2}(\cos{(a+b)}+\cos{(a-b)})$$ Try proving the rest using the same method.
+\end{example}
+
+\begin{theorem}
+[Product to Sum]
+$$\cos{a}\cos{b} = \frac{1}{2}(\cos{(a+b)}+\cos{(a-b)})$$
+$$\sin{a}\sin{b} = \frac{1}{2}(\cos{(a+b)}-\cos{(a-b)})$$
+$$\sin{a}\cos{b} = \frac{1}{2}(\sin{(a+b)}+\sin{(a-b)})$$
+$$\cos{a}\sin{b} = \frac{1}{2}(\sin{(a+b)}-\sin{(a-b)})$$
+\end{theorem}
+
+\subsection{Sum to Product}
+
+\vspace{5mm}
+\noindent It's not even worth memorizing both sum to product and product to sum. Just learn one of them. As you can see below, they're both just variations of each other.
+
+\begin{theorem}
+[Sum to Product]
+$$\cos{(a)}+\cos{(b)} = 2\cos{(\frac{a+b}{2})}\cos{(\frac{a+b}{2})}$$
+$$\cos{(a)}-\cos{(b)} = -2\sin{(\frac{a+b}{2})}\sin{(\frac{a+b}{2})}$$
+$$\sin{(a)}+\sin{(b)} = 2\sin{(\frac{a+b}{2})}\cos{(\frac{a+b}{2})}$$
+$$\sin{(a)}-\sin{(b)} = 2\cos{(\frac{a+b}{2})}\sin{(\frac{a+b}{2})}$$
+\end{theorem}
+
+
+
+\end{document}
