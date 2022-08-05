@@ -2,5 +2,7 @@
 
 Eventually add:
 Inversions Handout
+
 Concurrency Handout
+
 List of Cool Integrals
