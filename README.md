@@ -1,5 +1,6 @@
-# Competitive Math Handouts - Made for Doral Academy students
+# Competitive Math documents made for Doral Academy students
 
 Eventually add:
-Inversions
-Concurrency
+Inversions Handout
+Concurrency Handout
+List of Integrals
