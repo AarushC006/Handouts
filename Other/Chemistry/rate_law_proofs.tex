@@ -1,0 +1,67 @@
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[sexy]{evan}
+\usepackage{framed}
+\usepackage{amsmath}
+\usepackage{float}
+\DeclareMathOperator\Arg{Arg}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\DeclareMathOperator{\trig}{trig}
+\DeclareMathOperator{\arctrig}{arctrig}
+\usepackage{array}
+\title{Rate Law Proofs}
+\author{Aarush Chaubey}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Zero Order}
+$$\boxed{A = -kt + A_0}$$
+\subsection{Half Life}
+$$\frac{1}{2}A_0 = -kt + A_0$$
+$$\boxed{t = \frac{A_0}{2k}}$$
+
+
+\section{First Order}
+
+$$\textrm{Rate} = \frac{dA}{dt} = -kA$$
+
+$$\frac{1}{A}dA = -k dT$$
+
+$$\int{\frac{1}{A}} \, dA = \int{-k} \, dt$$
+
+$$\ln(|A|) = -kt+C$$
+
+$$e^{-kt+C} = A$$
+
+$$\textrm{At time t=0, A = A0, so } e^C = A_0$$
+
+$$\boxed{A=A_0e^{-kt}}$$
+
+\subsection{Half Life}
+
+$$\frac{1}{2}A_0 = A_0e^{-kt}$$
+
+$$\boxed{t = -\frac{-\ln({\frac{1}{2}})}{k}}$$
+
+\section{Second Order}
+
+$$\textrm{Rate} = \frac{dA}{dt} = -kA^2$$
+
+$$\int{\frac{1}{A^2}} \, dA = \int{-k} \, dt$$
+
+$$\frac{-1}{A} = -kt+C$$
+
+$$\textrm{At time t=0, } \frac{-1}{A} = C  = \frac{1}{A_0} \textrm{ so } C = \frac{-1}{A_0}$$
+
+$$\boxed{\frac{1}{A} = kt + \frac{1}{A_0}}$$
+
+\subsection{Half Life}
+$$\frac{1}{\frac{1}{2}A_0} = kt + \frac{1}{A_0}$$
+
+$$\boxed{t = \frac{1}{kA_0}}$$
+\end{document}
