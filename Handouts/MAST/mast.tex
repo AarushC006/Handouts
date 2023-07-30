@@ -1,0 +1,44 @@
+\documentclass[11pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\title{MAST Application}
+\author{Aarush Chaubey}
+\date{}
+\begin{document}
+\maketitle
+
+\section*{Algebra}
+\subsection*{A1}
+Let $x=2020$. Then we can rewrite the expression to be
+$$\frac{(2x-1)(2x)(2x+1)+(x-1)(x)(x+1)}{(x-1)(x)+x(x+1)+(x-1)(x)} = \frac{9x^3-3x}{3x^2-1}=3x=\boxed{6060}$$
+
+\subsection*{A2}
+\begin{align*}
+\sum_{a=1}^{\infty} \frac{32a}{16a^4+14a^2+25} &= \sum_{a-1}^{\infty}\frac{32a}{(4a+3)^2+16}\\
+&= 32(\frac{1}{5\cdot13}+\frac{2}{13\cdot29}+\frac{3}{29\cdot53}+\frac{4}{85\cdot53}\cdots)
+\end{align*}
+
+Through common differences, we see that the difference of the difference of factors in the denominators is constant i.e.
+$$5 \quad 13 \quad 29 \quad 53 \quad 85...$$
+$$8 \quad 16 \quad 24 \quad 32...$$
+$$8 \quad 8 \quad 8...$$
+We can rewrite the top sequence to be:
+
+\begin{align*}
+8\binom{n}{2}+8\binom{n}{1}+5\binom{n}{0}
+&=\frac{8(n)(n-1)}{2}+8n+5\\
+&=4n^2+4n+5
+\end{align*}
+where $n$ is a positive integer.
+Now we can rewrite the original series as:
+
+$$\sum_{a=1}^{\infty} \frac{32a}{16a^4+14a^2+25}=\sum_{n=1}^{\infty} \frac{32n}{(4n^2+4n+5)(4n^2-4n+5)}$$
+
+Because there are two quadratic factors in the denominator of the series, we can use partial fraction decomposition. We can also factor out the 32 and multiply it later.
+
+$$\frac{n}{(4n^2+4n+5)(4n^2-4n+5)} = \frac{An+B}{4n^2+4n+5}+\frac{Cn+D}{4n^2-4n+5}$$
+
+\vspace{5mm}
+Multiplying both sides by $(4n^2+4n+5)(4n^2-4n+5)$ gives $A=0, B=\frac{-1}{8}, C=0, D=\frac{1}{8}.$ Expanding out the sequence shows that it telescopes and all but $\frac{C\cdot0+\frac{1}{8}}{4\cdot1^2-4\cdot1+5}$ are cancelled. Multiplying by 32 gives $32\cdot\frac{1}{40}=\boxed{\frac{4}{5}}$
+
+\end{document}
