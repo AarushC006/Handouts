@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+
+\title{Hawking Area Theorem Intuition}
+\author{Aarush Chaubey}
+\date{May 2023}
+
+\begin{document}
+
+\maketitle
+
+Because black holes are so massive, they are extremely, if not actually, perfect spheres. This means we can approximate with very high accuracy $SA = 4\pi r^2$. We also know that $F_g=\frac{GMm}{r^2}$, so we know that the force due to gravity and surface area are related(made obvious by substitution).
+
+\vspace{5mm}
+If we say $SA \propto G^{\alpha}M^{\beta}c^{\gamma}$, we can use dimensional analysis to arrive at the following \[m^2=(\frac{m^3}{s^2*kg})^{\alpha}(kg)^{\beta}(\frac{m}{s})^{\gamma}\]
+
+
+The units of $G$ can be found by $F_g=\frac{GMm}{r^2}=ma$ and solving for G in terms of $a,M,r$
+
+Rearranging: 
+\begin{align*}
+    m^2&=m^{3\alpha+\gamma}\\
+    s^0&=s^{-2\alpha-\gamma}\\
+    kg^0&=kg^{\beta-\alpha}
+\end{align*}
+
+Solving the system gives: $\alpha=2,\beta=2,\gamma=-4$, yielding $\boxed{SA \propto \frac{G^2M^2}{c^4}}$ The actual formula for surface area is $\boxed{SA = \frac{16\pi G^2M^2}{c^4}}$
+
+\vspace{5mm}
+Any increase in mass will result in a greater surface area, thus:
+\[\frac{d(SA)}{dt}\geq0\]
+\end{document}
