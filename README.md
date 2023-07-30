@@ -1,6 +1,6 @@
 # LaTeX documents made by me, partially for Doral Academy students and partially for my own benefit
 
-`Tests` is a list of tests that I've made for math club students. Hope to expand it eventually
+`Tests` is a list of tests that I've made for math club students.
 
 `Other` is a list of non-math LaTeX documents that I've enjoyed writing!
 
