@@ -6,6 +6,8 @@
 
 `Handouts` are handouts for math club students. I hope to expand it to calculus topics.
 
+`template.tex` is my template for basically all my documents
+
 Eventually add:
 
 Inversions Handout
