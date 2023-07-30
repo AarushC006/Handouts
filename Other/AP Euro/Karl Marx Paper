@@ -1,0 +1,147 @@
+\documentclass[11pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[sexy]{evan}
+\usepackage{framed}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{array}
+\usepackage{setspace}
+
+
+\title{Why We Can't Have Nice Things}
+\author{Aarush Chaubey}
+\date{}
+
+\begin{document}
+
+
+\maketitle
+
+\pagebreak
+{
+\hypersetup{linkcolor=black}
+\tableofcontents
+}
+\vspace{30mm}
+
+\pagebreak
+\begin{spacing}{2}
+\section{Abstract}
+The Communist Manifesto was not a product of malicious intent, yet it was a reaction to a lack of justice.  Its product, Marxism, has had multiple attempted implementations without much success, however its implementations did not often follow Marxist principles fully e.g.  Lenin implementing his version of Marxism(Leninism) with the elite ruling Russia instead of it being a ”dictatorship of the proletariat”(Marx, 1847). Furthermore, these future implementations may have had malicious intent behind them, and even when they didn't, they faced outside intervention making implementations of the Communist Manifesto doomed to fail.
+\end{spacing}
+
+\pagebreak
+\section{The Causes and Effects of the Communist Manifesto}
+\subsection{Causes}
+\begin{spacing}{2}
+In order to properly discuss the exigence of the Communist Manifesto, one must discuss the socioeconomic context of Marx's time.\footnote{Engels did work on the Manifesto as well, but his role was more of editing and assisting Marx, the main writer, so we will focus on Marx} Furthermore, the social aspects were a product of the economic advances of time time, making it appropriate to first discuss the economics.
+\end{spacing}
+\subsubsection{The Economic Causes}
+ \begin{spacing}{2}
+At the time of writing the Communist Manifesto, the Second Industrial Revolution was starting to blossom in Europe. Goods could be produced at record rates in factories. This production rate can be partially attributed to the efficiency of industrial age machines and the development of factories to house those machines. The cotton gin improved the efficacy of removing cotton from cotton threads; previously a manual, strenuous, and time-consuming task, workers could deseed cotton plants faster than ever. The steam engine was one of the necessary components of the Industrial Revolution because it could power machines like the cotton gin. Previous methods of non-manual power were water-based and thus, their production was determined by the flow of water. When rivers froze over in European winters, factories could not perform at their full potential. The steam engine involves the movement of steam from boiling water to power pistons which, in turn, power industrial machines. Because factories were able to become location independent and had the ability to mass produce goods, they were the center of the Industrial Revolution throughout Europe. The Second Industrial Revolution was especially prominent in Karl Marx's home country of Germany, who "In chemistry, [Germany] took the lead" (Mokyr, 1998, p.4). Because of its proximity to Marx, the social effects of the Industrial Revolution were able to impact him.
+
+\subsubsection{The Social Causes}
+As the Industrial Revolution transformed European production, it transformed European social norms i.e. the means of earning a living were directed away from rural areas and towards cramped cities where workers would lack any luxuries (Gray, 2015, p.5). Because factories were much more efficient than previous means of production, they had a lot of demand for jobs, especially ones created because of the Industrial Revolution like operating machinery. The creation of these jobs attracted commoners from rural areas towards industrialized cities. It especially attracted commoners because working in factories was extremely arduous with many factories sharing 12+ hour workdays, possibilities to inhale deadly metals, and cramped/unsafe working areas close to machinery. Furthermore, because so many commoners were attracted to jobs, there were virtually no salary improvements as there would always be another replacement. In addition to cramped work-spaces, workers had to live in cramped tenements where running water was not always a guarantee. Factory workers also usually worked weekends with very few days off: tycoon Andrew Carnegie notoriously "gave his workers a single holiday- the Fourth of July; for the rest of the year, they worked like draft animals" (PBS,The Steel Business). Marx condemned what he saw, especially in industrial Germany: "The bourgeoisie has through its exploitation of the
+world market given a cosmopolitan character to production and consumption in every country. To the great chagrin of reactionaries, it has drown from under the feet of industry the national ground on which it stood" (Marx, 1847, p.13). The factory owners were members of the bourgeoisie, and Marx denounced them for abusing the proletariat\footnote{Engels confirmed that the bourgeoisie was "the class of modern capitalists, owners of the means of social production" while the proletariat was "the class of modern wage-laborers who, having no means of production of their own, arc reduced to selling their labor power in order to live."}, many of whom were factory workers. With such torturous conditions, the workers' lives could not have been anything but miserable. By having such a large monopoly on urban labor, factory owners basically owned the workers e.g. when they could eat and rest during the day, and if they refused, they would lose the meager compensation they were getting. With such overarching control over factory workers, their treatment is not unlike those of industrial machines. With this machinal control came a lack of freedom and individuality, killing the souls of the workers. Ayn Rand noticed this: "If you learn how to rule one man's soul, you can get the rest of mankind"(Rand, 1961, The Soul of a Collectivist). The mass migrations of workers to urban areas to work in factories is exactly what getting the "rest of mankind" is. Factory owners realized the desperation workers had to find jobs, so the owners were able to exploit the proletariat. This abuse is why Marx joined the "Communist League,"\footnote{Note that the word "communist" is already established before the writing of the Communist Manifesto. That is because Marx did not "invent" communism, rather Marxism is intended to provide a method of achieving communism.} and his passionate distaste for the abuse is why he wrote the Communist Manifesto. This distaste is exemplified in works of Marx: "So a god has snatched from me my all...Nothing but revenge is left to me!"(Marx, 1837, Invocation of One In Despair). Here, "god" was the power of the ever extending power of the bourgeoisie, and his revenge was through Marxism because that would allow the proletariat to overcome the influence of the bourgeoisie. Because Marx believed the proletariat would eventually overcome the power of the bourgeoisie, it is implied that he believed the proletariat was growing restless: "A spectre haunts Europe, the spectre of Communism"(Marx, 1847, 8). Marx was not the first to believe this either, as Johnathan Edwards preached, "The Bow of God’s Wrath is bent, and the Arrow made ready on the String, and Justice bends the Arrow at your Heart, and strains the Bow, and it is nothing but the meer Pleasure of God, and that of an angry God, without any Promise or Obligation at all, that keeps the Arrow one Moment from being made drunk with your Blood"(Edwards, 1741, Sinners In the Hands of an Angry God). In Edwards' case, "God" can be seen as the will of the people, who were on the verge of revolting like an drawn back on the verge of shooting. 
+
+
+\subsection{The Effects}
+There were many effects of the Communist Manifesto on society, but 3 major ones were the birth of Marxism, the Russian Revolution, and the Cold War(all of which will be gone over in brief simplicity due to a lack of motivation on the author's part). 
+\subsubsection{The Essence of Marxism}
+Marxism was the product of the \textit{Communist Manifesto}, and it is important to contrast Marxism with communism and with socialism. For example, one common misconception is that Karl Marx "invented communism"; rather, he codified a method to achieve communism through socialism.
+\begin{definition}[Socialism]
+Socialism is "a political and economic theory of social organisation which advocates that the means of production, distribution, and exchange should be owned and regulated by the community as a whole, rather than by private individuals."(azureScapegoat, Section: "What Is Socialism?")
+\end{definition}
+\begin{definition}[Communism]
+"Communism is a social, political, and economic ideology and movement whose ultimate goal is the establishment of a communist society. Communist society is the last stage of socialism. It is defined as a socio-economic order structured upon the common ownership of the means of production and the absence of social classes, money, and a state."(azureScapegoat, Section: "What Is Communism?").
+\end{definition}
+\begin{definition}[Marxism]
+Marxism is an ideology that aims to transfer society from capitalistic norms to one of socialist and, eventually, communist norms.
+\end{definition}
+
+Tribal communism was the system in hunter-gatherer societies where \textit{everybody} was working for sustenance, so there was not any class difference. After the Neolithic Revolution, farming allowed for growing crops beyond sustenance, so some people did not have to work. They were the ruling class of the time and started the first class differences. 
+
+\vspace{5mm}
+Let's consider the example of a table factory for the next segment. In a table factory, some workers craft the legs, some craft the top, and some put them these components together. The factory owner, on the other hand, just had to supply the materials to make the table; however, the factory owner also claimed the full table after production. The owner did give his workers compensation, but it was very little for 12 hour shifts in dangerous conditions. Marx viewed this as exploitation because without the workers' efforts, the table could not have been formed, thus he viewed the table to be the workers'. In the same way, he viewed all communally built goods as the workers'(the proletariat's) and not the factory owners'(the bourgeoisie). Because the workers owned the communal goods, they also owned the means of production of those goods i.e. they owned the factories and the machines necessary to produce the goods. Through the \textit{Communist Manifesto}, he was able to articulate a way for the proletariat to overthrow the bourgeoisie and establish a "fair" society. 
+
+
+\subsubsection{Marxism in the Russian Revolution}
+The start of the Russian Revolution can be placed at many times during history, so, instead, we'll define it as a buildup of anti-tsarist sentiment over time that culminated in the February\footnote{The Russians used a different calendar than the Gregorian one, so the February Revolution was in Gregorian March, and the October Revolution was in Gregorian November} Revolution of 1917 where Tsar Nicholas II was abdicated and replaced with a provincial government.
+
+\vspace{5mm}
+After the Russian Revolution in 1905, he had failed to maintain promises of rights to the Russian population which allowed the Bolsheviks, led by Vladimir Lenin, to grow in power. The Bolsheviks were a far left political party aimed at turning Russia into a communist state. During World War 1, the Russian army lacked basic necessities such as guns, bullets, and boots for all of its troops. Thus, the Russians fared extremely poorly as exemplified by the(at least) 3 million Russian deaths during World War I- more than any other country. After more of such incidents, the February Revolution of 1917 resulted in Nicholas II abdicating his throne, and he was later killed by Bolsheviks\footnote{Ironicly, czar(tzar) derives from Caesar who was also killed by people fed up with his autocratic rule}
+
+\vspace{5mm}
+During the October Revolution, the Bolshevik Party, led by Vladimir Lenin, staged a coup during a meeting of the Soviets. They also held elections and lost the majority vote but militarily overpowered the Socialist-Revolutionary Party. So far, this is what Marx had imagined: a revolution throwing off the chains of tsarist Russia and liberating Russia through social ideologies. Well, it is what Marx imagined minus one detail - Lenin believed the elite should rule instead of the workers. In fact, Lenin militarily suppressed the peasant Green Revolution where peasants protested the Red Army taking their grain. Lenin's government further deviated from Marxism e.g. in the New Economic Policy, Lenin promoted individual businesses and the accumulation of wealth. The bolstering of private business is exactly what created the bourgeoisie, and making another elite class could prove the whole revolution redundant. 
+
+\vspace{5mm}
+When Stalin took control over the Russia after Lenin's death, he inherited power over the rest of the USSR. He also continued Lenin's plan of Soviet growth by sparking revolutions in non-communist countries.It's also important to note that communist state is not a state that is communist, rather a socialist state that is headed by a Communist Party. Stalin also started Soviet industrialization which helped prepare it for World War II and propel it into the global spotlight along with the United States in the Cold War.
+
+\subsubsection{Marxism in the Cold War}
+\textit{In the following section, "spreading communism" refers to spreading Communist Parties and resulting in other states becoming socialist, and "spreading socialism" can be thought of as the same thing}
+
+\vspace{5mm}
+
+After the end of World War II in 1945, the alliance between the United States and the Soviet Union began to fall apart. The countries were polar opposites, and each disliked the other's method of government. This period of tension lasted until the fall of the Soviet Union in 1991 and was called the Cold War. 
+\vspace{5mm}
+
+During the early stages of the Soviet Union, the Communist International(Comintern) was an international, communism promoting organization. While it was disbanded in 1943, the ideology prevailed, and the Soviet Union continued to recruit/inspire other countries to be communist e.g. Chile, Nicaragua, Korea, etc... The list of countries with significant communist sympathy was large, and this aligned with the Marxist beliefs of transforming the capitalist world into a socialist one and eventually into a communist one.
+
+\vspace{5mm}
+Because the USSR was intent on its Marxist spreading of communism, the capitalist United States was against it. In fact, the United states continued to recruit/inspire other countries to be capitalist e.g. Chile, Nicaragua, South Korea, etc... The list of capitalist sympathies was also large, and this aligned with Smithian values of capitalism being instituted worldwide, thus allowing true free trade.
+
+Thus, the Cold War was a constant battle between the "communist exporting" values of Marxism and the inherently "anti-communist" values of capitalism. It was never an explicit battle between the United States and the USSR; instead, it was through proxy wars that ideologies were able to gain ground. 
+
+\vspace{5mm}
+\noindent It should finally be recognized that Cold War Marxism was not inherently malicious or benevolent:
+
+\vspace{5mm}
+In Cambodia, the "communist"\footnote{Only communist in name and not in practice because he established a tyranny and sometimes killed people for even sneezing- going directly against egalitarian socialist views} Pol Pot killed a "quarter of Cambodia's seven million people, by the most widely accepted estimates, through execution, torture, starvation and disease"(Mydans, 1998). The Communist Vietnamese government invaded Cambodia partially to remove the Khmer Rhouge, the Communist Party that ruled Cambodia and led to the genocide of its citizens. That is, communists invaded other communists because they were not practicing communism and instead terrorism in the name of communism.
+
+\vspace{5mm}
+In other cases, Marxism did seem to be malicious e.g. during the Afghan Communist Revolution: "Between April 1978 and the Soviet invasion of December 1979, Afghan communists executed 27,000 political prisoners at the sprawling Pul-i-Charki prison six miles east of Kabul"(Kaplan, 1990). 
+
+\vspace{5mm}
+Note that the capitalist United States was not free of fault here either. The United States supported Cambodian leadership because they were fighting against Communist forces. In Afghanistan, the United States sponsored the Mujahideen against Communist Soviet and Afghan forces; one of these Mujahideen fighters included Osama bin Laden who went on to found the terrorist group Al Qaeda. 
+
+\end{spacing}
+
+\pagebreak
+\section{References}
+\begin{thebibliography}{}
+\bibitem{article}
+Mokyr, J. 1998, \textit{The Second Industrial Revolution, 1870-1914}
+
+\bibitem{article}
+Gray, R. 2015, \textit{Rents and Welfare in	the	Second	Industrial Revolution: Evidence from New York City}
+
+\bibitem{article}
+PBS, \textit{Andrew Carnegie: The Richest Man in the World}
+
+\bibitem{article}
+Marx, Karl. 1847, \textit{Manifesto of the Communist Party/The Communist Manifesto}
+
+\bibitem{website}
+azureScapegoat, \textit{The Basics of Socialism}, \href{https://www.socialism101.com/basic}{https://www.socialism101.com/basic}
+
+\bibitem{article}
+Mougel, Nadège. 2011, \textit{World War I Casualties}
+
+\bibitem{article}
+Mydans, Seth. 1998, \textit{DEATH OF POL POT; Pol Pot, Brutal Dictator Who Forced Cambodians to Killing Fields, Dies at 73}
+
+\bibitem{article}
+Kaplan, Robert D. 1990, \textit{Soldiers of God: With Islamic Warriors in Afghanistan and Pakistan}
+
+\bibitem{book}
+Marx, Karl. 1837, \textit{Book of Verse}
+
+\bibitem{sermon}
+Edwards, Johnathan. 1741, \textit{Sinners in the Hands of an Angry God}
+
+\bibitem{book}
+Rand, Ayn. 1961, \textit{For The New Intellectual}
+
+\end{thebibliography}
+
+\end{document}
