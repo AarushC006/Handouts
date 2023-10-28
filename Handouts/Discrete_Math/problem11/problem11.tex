@@ -1,0 +1,49 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[margin=1in,a4paper]{geometry}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\setlist{nosep}
+\usepackage{amsmath,amssymb}
+
+\usepackage{TwoColumnProof}
+
+\title{Two-Column Proof Example}
+
+%% Using example from http://www.sparknotes.com/math/geometry3/geometricproofs/section1.rhtml
+
+\begin{document}
+
+
+
+\section*{Given:}
+Euclidean Axioms
+
+\section*{Prove:}
+
+
+\begin{TwoColumnProof}
+\StatementReason{For any 6 points, the number of distinct triangles is $\binom{6}{3}$}{Choose isn't that hard to prove}
+
+
+\StatementReason{The only way to have two triangles which don't intersect is having each of the 3 vertices adjacent to each other.}{Consider if they don't. Then there won't be 3 vertices on one arc of the triangle to make a non-intersecting triangle. }
+
+
+\StatementReason{Thus, if we choose one group of 3 adjacent vertices, there is only one other triangle (the other 3 adjacent vertices)}{Elementary by observation}
+
+
+\StatementReason{The number of ways to choose a group of 3 adjacent vertices is equal to the number of ways to choose distinct triangles, which is $\binom{6}{3}$}{For each triangle chosen, there is exactly one other triangle to be made because there are only 3 other vertices to choose}
+
+
+\StatementReason{The number of ways to pick a group of 3 adjacent vertices is 6}{Count adjacent groups of 3 while going around the circle}
+
+
+\StatementReason{The final probability is the number of ways to choose a group of 3 adjacent vertices divided by the number of ways to pick triangles, so $\frac{6}{\binom{6}{3}}$}{Definition of probability is what you want over what you need}
+
+\StatementReason{Final answer is $\boxed{\frac{3}{10}}$}{Definition of division}
+\end{TwoColumnProof}
+
+\end{document}
