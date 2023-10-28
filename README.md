@@ -14,4 +14,4 @@ Inversions Handout
 
 Concurrency Handout
 
-List of Cool Integrals
+List of Cool Integrals --- Getting done!
