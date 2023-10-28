@@ -1,0 +1,80 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[margin=1in,a4paper]{geometry}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\setlist{nosep}
+\usepackage{amsmath,amssymb}
+
+\usepackage{TwoColumnProof}
+
+\title{Two-Column Proof Example}
+
+%% Using example from http://www.sparknotes.com/math/geometry3/geometricproofs/section1.rhtml
+
+\begin{document}
+
+
+
+\section*{Given:}
+
+\emph{Lemma 1}: $a*b \geq 0$ if $a,b \geq 0$\\
+\emph{Lemma 2}: Distributive Property of Multiplication over Addition\\
+\emph{Lemma 3}: Addition Property of Equality\\
+\emph{Lemma 4}: Every real number has a unique inverse\\
+\emph{Lemma 5}: Multiplicative Property of Equality\\
+\emph{Lemma 6}: Square Root is always increasing for increasing values of x\\
+\textbf{Proof:} $\frac{d(\sqrt{x})}{dx} = \frac{1}{2}x^{-1/2}$ Derivative is always positive for positive x because the square root is always positive, so it's multiplicative inverse is always positive.\\
+\emph{Lemma 7}: Reflexive Property of Equality\\
+\emph{Lemma 8}: AM-GM \\
+\emph{Lemma 9}: Multiplicative Property of Inequality\\
+\textbf{Proof}:
+\begin{TwoColumnProof}
+\StatementReason{$(a-b)*(a-b) = (a-b)^2 \geq 0$}
+{Lemma 1}
+
+\StatementReason{$a^2-2ab+b^2 \geq 0$}
+{Lemma 2}
+
+\StatementReason{$a^2+2ab+b^2 \geq 4ab$}
+{Lemma 3}
+
+\StatementReason{$(a+b)^2 \geq 4ab$}
+{Lemma 2}
+
+\StatementReason{$\frac{(a+b)^2}{4} \geq ab$}
+{Lemmas 4, 5}
+
+\StatementReason{$\frac{a+b}{2} \geq \sqrt{ab}$}
+{Definition of square root and Lemma 6}
+
+
+
+
+\end{TwoColumnProof}
+
+\section*{Prove:}
+Given $ab=1$, prove $a^6+4b^6 \geq 4$
+
+\begin{TwoColumnProof}
+    \StatementReason{$ab=1$}{Given}
+
+    \StatementReason{$(ab)^n = (ab)^n$ = (1)^n}{Lemma 7 }
+
+    \StatementReason{$(ab)^6 = a^6*b^6=1$}{Statement 2}
+
+    \StatementReason{$a^6=\frac{1}{b^6}$}{Lemmas 4, 5}
+
+    \StatementReason{$a^6+4b^6=a^6+\frac{4}{a^6}$}{Statement 4}
+
+    \StatementReason{$\frac{a^6+\frac{4}{b^6}}{2}\geq \sqrt{a^6*\frac{4}{a^6}}=\sqrt{4}=2$}{Lemma 8}
+
+    \StatementReason{$\boxed{a^6+4b^6 \geq 4}$}{Lemma 9}
+    
+\end{TwoColumnProof}
+
+
+\end{document}
