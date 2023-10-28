@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{framed}
+\usepackage{amsmath}
+\usepackage{float}
+\DeclareMathOperator\Arg{Arg}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\DeclareMathOperator{\trig}{trig}
+\DeclareMathOperator{\arctrig}{arctrig}
+\usepackage{array}
+\usepackage{enumitem}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+\usepackage{multicol}
+\usepackage{titling}
+\setlength{\droptitle}{-5em}
+\newcommand\floor[1]{\lfloor#1\rfloor}
+\title{Calculus Practices Week 1}
+\author{Doral Academy Math Club -- Aarush Chaubey}
+\date{October 24, 2023}
+
+\begin{document}
+
+\maketitle
+\section{Questions}
+\begin{enumerate}
+    \item Prove \[\lim_{x \to 0} \frac{\sin(x)}{x}\]
+    \item Prove \[\lim_{x \to 0} \frac{\sin(ax)}{x}\]
+    \item Prove \[\lim_{x \to \infty} \Big(1+\frac{1}{x}\Big)^x\]
+    \item Prove \[\lim_{x \to \infty} \Big[\frac{(1+\frac{1}{x})^x}{e}\Big]^x\]
+    \item Define \[\zeta(x) = \sum_{n=1}^{\infty}\frac{1}{n^x}\] Find \[\lim_{x \to \infty} (\zeta(x)-1)^{\frac{1}{x}}\]
+    \item Define the $nth$ Fibonacci number as \[F_n=F_{n-1}+F_{n-2}\] where \[F_1=F_2=1\] Find \[\lim_{n \to \infty} \frac{F_{n+1}}{F_n}\]
+    \item Find \[\lim_{x \to 0} \Big(\frac{x}{\sin^3(x)}-\frac{1}{x^2}\Big)\]
+    \item Bonus Question! Define the double factorial (!!) as \[n!!=n*(n-2)*(n-4)\cdots\] where the last term is 2 for even $n$ and 1 for odd $n$ Find \[\frac{(2n-1)!!\sqrt{n}}{(2n)!!}\]
+\end{enumerate}
+\section{Answers}
+\begin{enumerate}
+    \item \boxed{1}
+    \item \boxed{a}
+    \item \boxed{e}
+    \item \boxed{\frac{1}{\sqrt{e}}}
+    \item \boxed{\frac{1}{2}}
+    \item \boxed{\frac{1+\sqrt{5}}{2}}
+    \item \boxed{\frac{1}{2}}
+    \item \boxed{\frac{1}{\sqrt{\pi}}}
+    
+\end{enumerate}
+
+\end{document}
